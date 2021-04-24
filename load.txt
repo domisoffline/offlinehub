@@ -1,0 +1,119 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Topframe = Instance.new("Frame")
+local AdminCommands = Instance.new("TextButton")
+local AdoptMe = Instance.new("TextButton")
+local JailBreak = Instance.new("TextButton")
+local MurderMystery = Instance.new("TextButton")
+local Credits = Instance.new("TextLabel")
+local OfflineHubTitle = Instance.new("TextLabel")
+local OfflineHubWelcome = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Topframe.Name = "Topframe"
+Topframe.Parent = ScreenGui
+Topframe.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Topframe.Position = UDim2.new(0.573836207, 0, 0.603194058, 0)
+Topframe.Size = UDim2.new(0, 440, 0, 258)
+Topframe.Active = true
+Topframe.Draggable = true
+
+AdminCommands.Name = "AdminCommands"
+AdminCommands.Parent = Topframe
+AdminCommands.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+AdminCommands.Position = UDim2.new(0.00893956982, 0, 0.516283393, 0)
+AdminCommands.Size = UDim2.new(0, 198, 0, 86)
+AdminCommands.Font = Enum.Font.SourceSans
+AdminCommands.Text = "Admin Commands"
+AdminCommands.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminCommands.TextScaled = true
+AdminCommands.TextSize = 14.000
+AdminCommands.TextWrapped = true
+AdminCommands.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+AdoptMe.Name = "AdoptMe"
+AdoptMe.Parent = Topframe
+AdoptMe.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+AdoptMe.Position = UDim2.new(0.53393954, 0, 0.142462209, 0)
+AdoptMe.Size = UDim2.new(0, 201, 0, 86)
+AdoptMe.Font = Enum.Font.SourceSans
+AdoptMe.Text = "Adopt Me Script"
+AdoptMe.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdoptMe.TextScaled = true
+AdoptMe.TextSize = 14.000
+AdoptMe.TextWrapped = true
+AdoptMe.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/BloxHub-v2/main/Main"))()
+end)
+
+JailBreak.Name = "JailBreak"
+JailBreak.Parent = Topframe
+JailBreak.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+JailBreak.Position = UDim2.new(0.00810324959, 0, 0.140314385, 0)
+JailBreak.Size = UDim2.new(0, 198, 0, 87)
+JailBreak.Font = Enum.Font.SourceSans
+JailBreak.Text = "JailBreak Script"
+JailBreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+JailBreak.TextScaled = true
+JailBreak.TextSize = 14.000
+JailBreak.TextWrapped = true
+JailBreak.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak"))()
+end)
+
+MurderMystery.Name = "MurderMystery"
+MurderMystery.Parent = Topframe
+MurderMystery.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+MurderMystery.Position = UDim2.new(0.53393954, 0, 0.514555216, 0)
+MurderMystery.Size = UDim2.new(0, 200, 0, 86)
+MurderMystery.Font = Enum.Font.SourceSans
+MurderMystery.Text = "Murder Mystery 2 Script"
+MurderMystery.TextColor3 = Color3.fromRGB(255, 255, 255)
+MurderMystery.TextScaled = true
+MurderMystery.TextSize = 14.000
+MurderMystery.TextWrapped = true
+MurderMystery.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = Topframe
+Credits.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+Credits.Position = UDim2.new(-0.0011636907, 0, -0.0010761586, 0)
+Credits.Size = UDim2.new(0, 161, 0, 16)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Created By DomIsOffline#4762"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 14.000
+
+OfflineHubTitle.Name = "OfflineHubTitle"
+OfflineHubTitle.Parent = Topframe
+OfflineHubTitle.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+OfflineHubTitle.Position = UDim2.new(0.667892218, 0, -0.0010761586, 0)
+OfflineHubTitle.Size = UDim2.new(0, 143, 0, 22)
+OfflineHubTitle.Font = Enum.Font.SourceSans
+OfflineHubTitle.Text = "OfflineHub"
+OfflineHubTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+OfflineHubTitle.TextScaled = true
+OfflineHubTitle.TextSize = 14.000
+OfflineHubTitle.TextWrapped = true
+
+OfflineHubWelcome.Name = "OfflineHubWelcome"
+OfflineHubWelcome.Parent = Topframe
+OfflineHubWelcome.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+OfflineHubWelcome.Position = UDim2.new(0.00355779473, 0, 0.922296584, 0)
+OfflineHubWelcome.Size = UDim2.new(0, 436, 0, 19)
+OfflineHubWelcome.Font = Enum.Font.SourceSans
+OfflineHubWelcome.Text = "Thank for using OfflineHub!"
+OfflineHubWelcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+OfflineHubWelcome.TextSize = 14.000
